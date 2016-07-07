@@ -1,10 +1,5 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-== README
-
 This is a rails API that can be used to create a feed. It can be used by a web app and mobile app.
 
 The API will generate:
