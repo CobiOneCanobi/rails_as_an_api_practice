@@ -3,26 +3,35 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+== README
 
-* Ruby version
+This is a rails API that can be used to create a feed. It can be used by a web app and mobile app.
 
-* System dependencies
+The API will generate:
+- a list of all items.
+- a list of all sold items for a particular seller.
+- details of one item.
+- a list of available items for a particular category.
 
-* Configuration
+A banned item doesnot display the following fields returned by the API:
+- Seller Name
+- Item Publishing Date
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+An item has the following structure:
+- Item title
+- Item description
+- Item Category (list of available values):
+  - Car
+  - Clothing
+  - Others
+- Item Price
+- Seller Name
+- Seller Latitude
+- Seller Longitude
+- Item Status (list of available values):
+  - Available
+  - Pending
+  - Sold
+  - Expired
+  - Banned
+- Item Published Date
